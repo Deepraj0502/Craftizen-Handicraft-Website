@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "poppin_regular";
+    src: url(Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "poppin_medium";
+    src: url(Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "poppin_bold";
+    src: url(Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: "poppin_thin";
+    src: url(Poppins-Thin.ttf);
+}
+@keyframes slide {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0%);}
+}
+.outer{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.inner-box{
+    width: 68%;
+    height: 75%;
+    border-radius: 5px;
+    box-shadow: 4px 4px 20px 2px #888888;
+    background-color: white;
+    position: sticky;
+    margin: auto;
+    top: 13%;
+    display: flex;
+}
+.box{
+    margin: 0%;
+    padding: 0%;
+    width: 510px;
+    background-color: #ffdfb6;
+    position: relative;
+    top: 0px;
+    height: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 1;
+}
+#button1{
+    width: 80%;
+    height: 42px;
+    font-size: 23px;
+    font-family: 'poppin_medium';
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+    top: 90px;
+    left: 52px;
+    color: black;
+    background: #a9cfbc;
+    cursor: pointer;
+    margin-top: 35px;
+}
+#button1:hover{
+    background-color: bisque;
+}
+#or{
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    top: 171px;
+    color: #333333;
+}
+#not{
+    font-size: 15px;
+    font-family: 'poppin_regular';
+    position: relative;
+    text-align: center;
+    top: 178px;
+    color: #333333;
+}
+input[id=username]{
+    position: relative;
+    width: 80%;
+    margin: 25px;
+    border: none;
+    border-bottom: 2px solid #333333;
+    outline: none;
+    font-size: 20px;
+    top: 70px;
+    left: 24px;
+    font-family: 'poppin_medium';
+    background-color: #ffdfb6;
+}
+input[id=pass]{
+    position: relative;
+    width: 80%;
+    margin: 25px;
+    border: none;
+    border-bottom: 2px solid #333333;
+    outline: none;
+    font-size: 20px;
+    top: 70px;
+    left: 24px;
+    font-family: 'poppin_medium';
+    background-color: #ffdfb6;
+}
+input[id=username]:focus{
+    border-bottom: 2px solid cyan;
+}
+input[id=pass]:focus{
+    border-bottom: 2px solid cyan;
+}
+label{
+    position: relative;
+    top: 80px;
+    margin: 50px;
+    color: #333333;
+    font-family: 'poppin_regular';
+    font-weight: bold;
+}
+#forgot:hover{
+    color:red;
+}
+.existing{
+    font-family: 'poppin_medium';
+    font-size: 17px;
+    position: relative;
+    left: 27%;
+    top: 20%;
+    color: black;
+}
+.reg_btn{
+    font-family: 'poppin_medium';
+    font-size: 18px;
+    position: relative;
+    left: 37%;
+    top: 110px;
+    color: brown;
+    text-decoration: none;
+}
+.reg_btn:hover{
+    color: chocolate;
+}
+.image-box{
+    width: 53%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: 2px solid;
+    z-index: 2;
+    background: white;
+}
+@media (max-width:600px) {
+    .inner-box{
+        display: block;
+        background-color: transparent;
+        top: 20%;
+        height: 320px;
+    }
+    .logo{
+        width: 94%;
+        height: 200px;
+    }
+    .image-box{
+        width: 100%;
+        border: none;
+    }
+    .box{
+        width: 100%;
+        height: 320px;
+    }
+    #head{
+        font-family: monospace;
+        font-size: 30px;
+        position: relative;
+        left: 0px;
+        top: 9px;
+        color: #333333;
+        text-align: center;
+    }
+    label{     
+        position: relative;
+        top: 33px;
+        margin: 50px;
+        color: #333333;
+        font-family: 'poppin_regular';
+        font-weight: bold;
+        margin-left: 25px;
+    }
+    input[id=pass]{
+        position: relative;
+        width: 80%;
+        margin: 25px;
+        border: none;
+        border-bottom: 2px solid #333333;
+        outline: none;
+        font-size: 20px;
+        top: -10px;
+        left: 0px;
+        font-family: 'poppin_medium';
+        background-color: #ffdfb6;
+    }
+    input[id=username]{
+        position: relative;
+        width: 80%;
+        margin: 25px;
+        border: none;
+        border-bottom: 2px solid #333333;
+        outline: none;
+        font-size: 20px;
+        top: 15px;
+        left: 0px;
+        font-family: 'poppin_medium';
+        background-color: #ffdfb6;
+    }
+    #forgot{
+        bottom: 90px;
+        position: relative;
+    }
+    #button1{
+        width: 80%;
+        height: 36px;
+        font-size: 20px;
+        font-family: 'poppin_medium';
+        border-radius: 20px;
+        position: relative;
+        text-align: center;
+        top: -18px;
+        left: 27px;
+        color: black;
+        background: #a9cfbc;
+        cursor: pointer;
+        border: 1px solid;
+    }
+    .reg_btn{
+        font-family: 'poppin_medium';
+        font-size: 15px;
+        position: relative;
+        left: 32%;
+        top: -25px;
+        color: brown;
+        text-decoration: none;
+    }
+   .pass{
+        top: 10px;
+   }
+}

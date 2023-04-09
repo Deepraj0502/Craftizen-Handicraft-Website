@@ -1,0 +1,137 @@
+.body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+  
+.left-section {
+    flex-basis: 70%;
+    background-color: #fff4e6;
+}
+  
+.right-section {
+    flex-basis: 30%;
+}
+
+
+
+#cart-container table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#cart-container table thead{
+    font-weight: 700;
+}
+#cart-container table thead td{
+    background: #ffdfb6;
+    border: none;
+    padding: 4px 0;
+}
+
+#cart-container table td{
+    border: 1px solid #b6b3b3;
+    text-align: center;
+    background-color: white;
+}
+
+#cart-container table td:nth-child(1){
+    width: 70px;
+}
+#cart-container table td:nth-child(2),
+#cart-container table td:nth-child(3){
+    width: 150px;
+}
+
+#cart-container table td:nth-child(4),
+#cart-container table td:nth-child(5),
+#cart-container table td:nth-child(6){
+    width: 110px;
+}
+#cart-container table tbody img {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    margin: 20px;
+}
+
+#cart-bottom {
+    margin: 20px 0;
+    flex-direction: column;
+}
+
+#cart-bottom .coupon>div,
+#cart-bottom .total>div {
+    border: 1px solid #b6b3b3;
+    background-color: white;
+}
+
+#cart-bottom .coupon h5, 
+#cart-bottom .total h5 {
+    background: #ffdfb6;
+    border: none;
+    padding: 6px 12px;
+    font-weight: 700;
+}
+
+#cart-bottom .coupon p,
+#cart-bottom .coupon input {
+    padding: 0 12px;
+}
+
+#cart-bottom .coupon input {
+    height: 44px;
+}
+
+#cart-bottom .coupon input {
+    margin: 0 0 20px 12px;
+}
+
+#cart-bottom .total div>div {
+    padding: 0 12px;
+}
+
+.second-hr {
+    background: #b8b7b3;
+    width: 100%;
+    height: 1px;
+}
+.btn-lg {
+    background-color: aquamarine;
+    padding: 5px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    width: 90% !important;
+}
+.btn-lg:hover{
+    border: 1px solid black;
+    background-color: #2df9b4 !important;
+}
+.add-prd{
+    text-decoration: none;
+    color: black;
+    background: aquamarine;
+    border-radius: 2px;
+    position: relative;
+    left: 74px;
+    height: 25px;
+    display: block;
+    width: 50px;
+    bottom: 26px;
+    border: none;
+}
+.remove-prd{
+    text-decoration: none;
+    color: black;
+    background: red;
+    border-radius: 2px;
+    position: relative;
+    left: 74px;
+    height: 25px;
+    display: block;
+    width: 50px;
+    bottom: 26px;
+    border: none;
+}
+

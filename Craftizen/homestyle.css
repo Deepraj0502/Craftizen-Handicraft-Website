@@ -1,0 +1,43 @@
+/* footer {
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+} */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+#header {
+    background: url("https://p.w3layouts.com/demos/handicraft/web/images/banner.jpg");
+    background-size: cover;
+    height: 400px;    
+  }
+  #icon{
+    font-size:25px;
+    border-radius:50%;
+    background-color:#f4f4f4;
+    padding:15px;
+  }
+ 
+.pic{
+  border-radius: 10%;
+  width: 80%
+}
+.home-text{
+  font-size: 18px;
+  color: white;
+}
+.nav-username{
+  margin-top: 18px;
+    font-size: 20px;
+    font-family: math;
+    font-weight: 700;
+}
+.nav-username-img{
+  border-radius: 20px;
+  width: 40px;
+    margin-left: -28px;
+    margin-right: 10px;
+}
